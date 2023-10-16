@@ -8,11 +8,14 @@
 
 "use client";
 
-
 import styles from "./page.module.css";
 
 export default function Page(): JSX.Element {
   return (
-    <main className={styles.main}>{process.env["NEXT_PUBLIC_MAIN_ENV"]}</main>
+    <main className={styles.main}>
+      {process.env["NEXT_PUBLIC_MAIN_ENV"]}
+      <br />
+      dev env
+    </main>
   );
 }
