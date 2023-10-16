@@ -15,8 +15,8 @@ export default function Page(): JSX.Element {
     <main className={styles.main}>
       {process.env["NEXT_PUBLIC_MAIN_ENV"]}
       <br />
-      
-      dev env
+
+      {process.env["NEXT_PUBLIC_MAIN_ENV"]} env
     </main>
   );
 }
